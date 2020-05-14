@@ -1,21 +1,39 @@
-import React from "react"
-import { Link } from "gatsby"
+import React from 'react';
+import { Link } from 'gatsby';
+import styled from 'styled-components';
+import Layout from '../components/layout';
+import Image from '../components/image';
+import Banner from "../components/Banner"
+import Hero from "../components/hero/Hero"
+import Projects from "../components/projects/projects"
+import Contact from "../components/contact"
+import { graphql } from 'gatsby'
 
-import Layout from "../components/layout"
-import Image from "../components/image"
-import SEO from "../components/seo"
 
-const IndexPage = () => (
+const IndexPage = ({data}) => (
   <Layout>
-    <SEO title="Home" />
-    <h1>Hi people</h1>
-    <p>Welcome to your new Gatsby site.</p>
-    <p>Now go build something great.</p>
-    <div style={{ maxWidth: `300px`, marginBottom: `1.45rem` }}>
-      <Image />
-    </div>
-    <Link to="/page-2/">Go to page 2</Link>
+    <Hero home="true" img={data.defaultBcg.childImageSharp.fluid}>
+                <Banner title="Hey There!"
+                        name="I'm Craig Whittington"
+                        info="a web developer"
+            >
+    </Banner>
+    </Hero>
+    <Projects/>
+    <Contact/>
   </Layout>
-)
+);
 
-export default IndexPage
+export default IndexPage;
+
+export const query = graphql`
+  query {
+    defaultBcg: file(relativePath: { eq: "defaultBcg.jpeg" }) {
+      childImageSharp {
+        fluid(quality: 90, maxWidth: 4160) {
+          ...GatsbyImageSharpFluid_withWebp
+        }
+      }
+    }
+  }
+`
