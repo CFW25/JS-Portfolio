@@ -4,7 +4,7 @@ import styled from 'styled-components';
 import Layout from '../components/layout';
 import Image from '../components/image';
 import Banner from "../components/Banner"
-import Hero from "../components/hero/Hero"
+import Hero from "../components/hero/hero"
 import Projects from "../components/projects/projects"
 import Contact from "../components/contact"
 import { graphql } from 'gatsby'
