@@ -6,6 +6,7 @@ import ProjectCard from "./projectCard";
 const ProjectCont = styled.div`
     text-align:center;
     padding: 0 3rem;
+    padding-bottom: 1rem;
     background: #45567d;
 `;
 const CardCont = styled.div`
@@ -29,7 +30,7 @@ const ProjHeader = styled.h2`
 
 
 const Projects = () => (
-    <ProjectCont>
+    <ProjectCont id="projects">
         <ProjHeader>These are some of my projects</ProjHeader>
         <CardCont>
             <ProjectCard link="https://home-roast.netlify.com/"
@@ -43,7 +44,13 @@ const Projects = () => (
                         children="Travel Website Mockup"/>
             <ProjectCard link="https://github.com/CFW25/JS-Challenges"
                         source="https://i.ibb.co/WszWnx7/JSChallenges.jpg"
-                        children="Javascript Challenges"/>            
+                        children="Javascript Challenges"/>
+            <ProjectCard link="https://cfw25.github.io/LightsOutReact/"
+                        source="https://i.ibb.co/t4xDb5C/Lights-Out.png"
+                        children="LightsOut React"/>
+            <ProjectCard link="https://cfw25.github.io/Dadjokes/"
+                        source="https://i.ibb.co/PC8bcfF/Dadjokes.png"
+                        children="Dad Jokes"/>
         </CardCont>
     </ProjectCont>
 );

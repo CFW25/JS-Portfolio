@@ -19,7 +19,7 @@ const IndexPage = ({data}) => (
             >
     </Banner>
     </Hero>
-    <Projects/>
+    <Projects />
     <Contact/>
   </Layout>
 );

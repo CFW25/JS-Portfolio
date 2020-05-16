@@ -35,9 +35,9 @@ const StyledLi = styled.li`
 const Nav = () => (
     <NavDiv>
         <NavList>
-            <StyledLi><StyledLink to="/about">About</StyledLink></StyledLi>
-            <StyledLi><StyledLink to="/projects">Projects</StyledLink></StyledLi>
-            <StyledLi><StyledLink to="/contactme">Contact Me</StyledLink></StyledLi>
+            <StyledLi><StyledLink to="/#about">About</StyledLink></StyledLi>
+            <StyledLi><StyledLink to="/#projects">Projects</StyledLink></StyledLi>
+            <StyledLi><StyledLink to="/#contactme">Contact Me</StyledLink></StyledLi>
         </NavList>
     </NavDiv>
 );

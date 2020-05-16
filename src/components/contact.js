@@ -32,16 +32,14 @@ const StyA = styled.a`
 `;
 
 const Contact = () => (
-    <ContactCont>
+    <ContactCont id="contactme">
         <ContactHeader>
             <h2>Let's work together...</h2>
         </ContactHeader>
         <div>
             <StyA href="https://github.com/cfw25" target="_blank">
             Github</StyA>
-            <StyA href="https://twitter.com/" target="_blank">
-            Twitter</StyA>
-            <StyA sref="mailto:@example.com">
+            <StyA href="mailto:craig.whitt@hotmail.co.uk">
             Email Me</StyA>
         </div>
     </ContactCont>

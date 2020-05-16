@@ -10,6 +10,12 @@ import Hero from './hero/hero'
 
 const ContentWrapper = styled.div`
 `;
+
+if (typeof window !== "undefined") {
+  // eslint-disable-next-line global-require
+  require("smooth-scroll")('a[href*="#"]')
+}
+
 const Layout = ({ children }) => (
   <StaticQuery
     query={graphql`

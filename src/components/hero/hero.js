@@ -24,6 +24,7 @@ const Hero = ({ img, className, children, home }) => {
         className={className}
         fluid={img || data.defaultBcg.childImageSharp.fluid}
         home={home}
+        id="about"
         >
             {children}
         </BackgroundImage>
