@@ -7,7 +7,7 @@ const FootDiv = styled.div`
     justify-content:center;
     width:100%;
     background-color: #be3144;
-    padding:1rem;
+    padding: 1rem 0rem;
     p {
         font-size: 1.5rem;
         letter-spacing: 0.3rem;
