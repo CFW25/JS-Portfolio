@@ -3,8 +3,8 @@ import styled from 'styled-components'
 
 const BannerDiv = styled.div`
   p {
-    font-size: 3rem;
-    font-weight: 200;
+    font-size: 2.8rem;
+    font-weight: 600;
     font-style: italic;
     color: #be3144;
     text-align:center;
@@ -18,10 +18,10 @@ const BannerDiv = styled.div`
 
 @media screen and (min-width: 768px) {
     h1 {
-    font-size: 6.5rem;
+    font-size: 10.5rem;
   }
     p {
-    width: 70%;
+    
   }
 }
 `

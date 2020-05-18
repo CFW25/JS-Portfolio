@@ -18,7 +18,6 @@ query {
 
 const Hero = ({ img, className, children, home }) => {
     const data = useStaticQuery(getImage)
-
     return(
         <BackgroundImage
         className={className}

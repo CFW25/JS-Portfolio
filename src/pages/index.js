@@ -8,7 +8,7 @@ import Hero from "../components/hero/hero"
 import Projects from "../components/projects/projects"
 import Contact from "../components/contact"
 import { graphql } from 'gatsby'
-
+import Design from "../components/design/design"
 
 const IndexPage = ({data}) => (
   <Layout>
@@ -20,6 +20,7 @@ const IndexPage = ({data}) => (
     </Banner>
     </Hero>
     <Projects />
+    <Design/>
     <Contact/>
   </Layout>
 );
